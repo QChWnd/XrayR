@@ -19,6 +19,7 @@ type Config struct {
 type CertConfig struct {
 	CertMode         string            `mapstructure:"CertMode"` // none, file, http, dns
 	RejectUnknownSni bool              `mapstructure:"RejectUnknownSni"`
+	CipherSuites     string            `mapstructure:"CipherSuites"`
 	CertDomain       string            `mapstructure:"CertDomain"`
 	CertFile         string            `mapstructure:"CertFile"`
 	KeyFile          string            `mapstructure:"KeyFile"`
