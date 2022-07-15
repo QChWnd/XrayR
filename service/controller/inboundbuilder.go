@@ -26,6 +26,7 @@ func InboundBuilder(config *Config, nodeInfo *api.NodeInfo, tag string) (*core.I
 	}
 	if config.ListenPort != 0 {
 		nodeInfo.Port = config.ListenPort
+		tag = fmt.Sprintf("%s_%d", tag, config.ListenPort)
 	}
 
 	// Build Port
