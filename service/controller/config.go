@@ -2,6 +2,7 @@ package controller
 
 type Config struct {
 	ListenIP             string            `mapstructure:"ListenIP"`
+	ListenPort           int               `mapstructure:"ListenPort"`
 	SendIP               string            `mapstructure:"SendIP"`
 	UpdatePeriodic       int               `mapstructure:"UpdatePeriodic"`
 	CertConfig           *CertConfig       `mapstructure:"CertConfig"`
